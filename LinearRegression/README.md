@@ -1,7 +1,3 @@
-Claro! Aqui está a documentação da anatomia do código anterior, agora em português, para ser usada em um arquivo `.txt`:
-
----
-
 # Documentação: Anatomia do Código Python para Previsão de Custo Inicial
 
 ## Visão Geral
@@ -24,7 +20,6 @@ from sklearn.linear_model import LinearRegression
 ### 2. Carregamento dos Dados
 ```python
 def load_data(file_path):
-    """Carrega os dados de um arquivo CSV."""
     return pd.read_csv(file_path, sep=";")
 ```
 - **load_data**: Função para carregar dados de um arquivo CSV. Os dados são separados por ponto e vírgula (`;`).
@@ -32,7 +27,6 @@ def load_data(file_path):
 ### 3. Treinamento do Modelo
 ```python
 def train_model(data):
-    """Treina o modelo de Regressão Linear."""
     X = data[['FrqAnual']]
     y = data['CusInic']
     model = LinearRegression().fit(X, y)
@@ -46,7 +40,6 @@ def train_model(data):
 ### 4. Exibição dos Dados
 ```python
 def display_data(data):
-    """Exibe os dados na aplicação Streamlit."""
     st.header("Dados")
     st.table(data.head(10))
 ```
@@ -55,7 +48,6 @@ def display_data(data):
 ### 5. Exibição do Gráfico de Dispersão
 ```python
 def display_scatter_plot(X, y, model):
-    """Exibe o gráfico de dispersão com a linha de regressão."""
     st.header("Gráfico de Dispersão")
     fig, ax = plt.subplots()
     ax.scatter(X, y, color='blue')
@@ -70,7 +62,6 @@ def display_scatter_plot(X, y, model):
 ### 6. Previsão do Custo Inicial
 ```python
 def predict_cost(model, new_value):
-    """Prevê o custo inicial."""
     new_data = pd.DataFrame([[new_value]], columns=['FrqAnual'])
     return model.predict(new_data)[0]
 ```
