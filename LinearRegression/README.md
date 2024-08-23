@@ -105,5 +105,3 @@ if __name__ == "__main__":
   - **st.header**: Exibe o resultado da previsão.
 
 ---
-
-Você pode copiar esta documentação para um arquivo `.txt` para referência. Se precisar de mais alguma coisa, estou aqui para ajudar! 😊
