@@ -1,4 +1,4 @@
-# Documentação: Anatomia do Código Python para Previsão de Custo Inicial
+# Documentação do Código Python para Previsão de Custo Inicial
 
 ## Visão Geral
 Este documento fornece uma explicação detalhada do código Python usado para prever o custo inicial de uma franquia utilizando um modelo de regressão linear. O código utiliza a biblioteca Streamlit para criar uma aplicação web interativa.
